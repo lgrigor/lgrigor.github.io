@@ -1,0 +1,53 @@
+<head>
+  <!-- <link href="{% static 'main/css/common.css' %}" rel="stylesheet">
+  <link href="{% static 'main/css/materializee.css' %}" rel="stylesheet"> -->
+  
+  <link rel="stylesheet" type="text/css" href="/main/static/main/css/materializee.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="hide_scrollbar" style="background-color: black;">
+
+  <!-- NOT FIXED -->
+  <!-- MOBILE -->
+  <ul class="sidenav" id="mobile-demo" style="color: green;">
+    <li><a href="/home" class="btn waves-effect waves-light black">Home</a></li>
+    <li><a href="/about" class="btn waves-effect waves-light black">About</a></li>
+    <li><a href="/work" class="btn waves-effect waves-light black">Work</a></li>
+    <!--<li><a href="collapsible.html">Contact</a></li>-->
+    <li><a href="#dropdown2" class="btn center waves-effect waves-light dropdown-trigger black" data-target='dropdown2'><i class="material-icons right" style="color: white">arrow_downward</i>Contact Me</a></li>
+  </ul>
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content grey darken-3'>
+    <li><a href="https://www.linkedin.com/in/levon-grigoryan-synopsys/" target="black">LinkedIn</a></li>
+    <li class="divider" tabindex="-1"></li>
+    <li><a href="https://www.facebook.com/grigoryanlevon/" target="blank">Facebook</a></li>
+    <li><a href="https://mail.google.com/mail/u/0/?fs=1&to=levon.grigoryan97@gmail.com&tf=cm" target="blank">Gmail</a></li>
+  </ul> 
+
+  <!-- Dropdown Structure -->
+  <div>
+  <ul id='dropdown2' class='dropdown-content grey darken-3'>
+    <li><a href="https://www.linkedin.com/in/levon-grigoryan-synopsys/" target="black" style="color: white">LinkedIn</a></li>
+    <li class="divider" tabindex="-1"></li>
+    <li><a href="https://www.facebook.com/grigoryanlevon/" target="blank"  style="color: white">Facebook</a></li>
+    <li><a href="https://mail.google.com/mail/u/0/?fs=1&to=levon.grigoryan97@gmail.com&tf=cm" target="blank"  style="color: white">Gmail</a></li>
+  </ul> </div>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.tooltipped').tooltip();
+      $('.dropdown-trigger').dropdown();
+    });
+  </script>
+</body>

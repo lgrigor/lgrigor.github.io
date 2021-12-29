@@ -1,0 +1,83 @@
+<head>
+  <meta charset = "utf-8" />
+  <title>Who is Levon?</title>
+  <link rel="icon" type="image/x-icon" href="images/title.png" >
+  <link rel="stylesheet" type="text/css" href="header.html">
+  <link rel="stylesheet" type="text/css" href="css/materializee.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+
+<body class="hide_scrollbar" style="background-color: black">
+  <nav class="navbar-fixed" style="position: fixed;">
+    <div class="nav-wrapper">
+      <a href="index.html" class="brand-logo">Levon Grigoryan</a>
+      <a href="index.html" data-target="mobile-demo" class="sidenav-trigger"><i class="medium material-icons">menu</i></a>
+
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="index.html" class="btn waves-effect waves-light black" style="color: #38ffff;">Home</a></li>
+        <li><a href="about.html" class="btn waves-effect waves-light black">About</a></li>
+        <li><a href="work.html" class="btn waves-effect waves-light black">Work</a></li>
+        <!-- Dropdown Trigger -->
+        <li><a href="#dropdown1" class="btn waves-effect waves-light dropdown-trigger black" data-target='dropdown1'><i class="material-icons right">arrow_downward</i>Contact Me</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MOBILE -->
+  <ul class="sidenav" id="mobile-demo" style="color: green;">
+    <li><a href="index.html" class="btn waves-effect waves-light black">Home</a></li>
+    <li><a href="about.html" class="btn waves-effect waves-light black">About</a></li>
+    <li><a href="work.html" class="btn waves-effect waves-light black">Work</a></li>
+    <!--<li><a href="collapsible.html">Contact</a></li>-->
+    <li><a href="#dropdown2" class="btn center waves-effect waves-light dropdown-trigger black" data-target='dropdown2'><i class="material-icons right" style="color: white">arrow_downward</i>Contact Me</a></li>
+  </ul>
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content grey darken-3'>
+    <li><a href="https://www.linkedin.com/in/levon-grigoryan-synopsys/" target="black">LinkedIn</a></li>
+    <li class="divider" tabindex="-1"></li>
+    <li><a href="https://www.facebook.com/grigoryanlevon/" target="blank">Facebook</a></li>
+    <li><a href="https://mail.google.com/mail/u/0/?fs=1&to=levon.grigoryan97@gmail.com&tf=cm" target="blank">Gmail</a></li>
+  </ul> 
+
+  <!-- Dropdown Structure -->
+  <div>
+  <ul id='dropdown2' class='dropdown-content grey darken-3'>
+    <li><a href="https://www.linkedin.com/in/levon-grigoryan-synopsys/" target="black" style="color: white">LinkedIn</a></li>
+    <li class="divider" tabindex="-1"></li>
+    <li><a href="https://www.facebook.com/grigoryanlevon/" target="blank"  style="color: white">Facebook</a></li>
+    <li><a href="https://mail.google.com/mail/u/0/?fs=1&to=levon.grigoryan97@gmail.com&tf=cm" target="blank"  style="color: white">Gmail</a></li>
+  </ul> </div>
+
+  <!-- MAIN CONTENT -->
+  <div style="color: white; position: absolute; top: 250px; left: 100px">
+
+    <p class="my_animation" style="--my_delay: 0.3s; --my_duration: 1.0s; --my_animation_name: top-to-bottom; font-size: 20px; margin: 0;">
+      Hi there, my name is Levon, and I am a ... </p>
+    <p class="my_animation" style="--my_delay: 1.5s; --my_duration: 2.5s; --my_animation_name: bottom-to-top; font-size: 48px; margin: 0;">
+      Quality Assurance Engineer</p>
+    <p class="my_animation" style="--my_delay: 3.0s; --my_duration: 2.5s; --my_animation_name: bottom-to-top; inline-size: 50%; overflow-wrap: break-word;">
+      Quality assurance (QA) is a way of preventing mistakes and defects in manufactured products and avoiding problems when delivering products or services to customers. The terms "quality assurance" and "quality control" are often used interchangeably to refer to ways of ensuring the quality of a service or product.
+      <br><br>
+      For instance, the term "assurance" is often used as follows: Implementation of inspection and structured testing as a measure of quality assurance in a television set software project at Philips Semiconductors is described. The term "control", however, is used to describe the fifth phase of the define, measure, analyze, improve, control model.
+      <br></p>
+    <a class="my_animation" style="--my_delay: 4.5s; --my_duration: 2.5s; --my_animation_name: bottom-to-top;" href="https://en.wikipedia.org/wiki/Quality_assurance" target="black">Learn more ✌️</a>
+
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.tooltipped').tooltip();
+      $('.dropdown-trigger').dropdown();      
+    });   
+    
+  </script>
+</body>
